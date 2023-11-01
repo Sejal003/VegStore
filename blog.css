@@ -1,0 +1,50 @@
+.blog-container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit , minmax(30rem , 1fr));
+    gap: 1.5rem;
+}
+.blog-container .box{
+    overflow: hidden;
+    border-radius: .5rem;
+    background: #fff;
+    box-shadow: var(--box-shadow);
+}
+.blog-container .box img{
+    height: 25rem;
+    width: 100rem;
+    object-fit: cover;
+}
+.blog-container .box .content{
+      padding: 2rem;
+}
+.blog-container .box .content .icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1rem;
+    border-bottom: var(--border);
+}
+.blog-container .box .content .icons a{
+    font-size: 1.5rem;
+    color: var(--light-color);
+}
+.blog-container .box .content .icons a:hover{
+    color: var(--black);
+}
+.blog-container .box .content .icons a i{
+    padding-right: .5rem;
+    color: var(--orange);
+}
+.blog-container .box .content h3{
+    line-height: 1.8;
+    font-size: 2.2rem;
+    color: var(--black);
+    padding: 0.5rem 0;
+}
+.blog-container .box .content p{
+    line-height: 1.8;
+    font-size: 1.5rem;
+    color: var(--light-color);
+    padding: 0.5rem 0;
+}
